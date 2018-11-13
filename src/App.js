@@ -10,7 +10,7 @@ const App = () => {
   return (
     // Provider can only have one child component so you have to nest it
     <Provider store={createStore(reducers)}>
-      <View>
+      <View style={{ flex: 1 }}>
         <Header headerText="Tech Stack" />
         <LibraryList />
       </View>
